@@ -44,6 +44,13 @@
     height: 100vh;
   }
 
+  .card {
+    background-color: rgb(7, 114, 185);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #fff;
+  }
+
   .main {
     grid-area: main;
     overflow: auto;
