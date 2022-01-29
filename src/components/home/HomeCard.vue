@@ -1,10 +1,14 @@
-<script setup></script>
+<script setup>
+  import { inject } from '@vue/runtime-core';
+
+  const editCostBox = inject('editCostBox');
+</script>
 
 <template>
   <div class="card">
     <div class="card__header">
       <h2 class="card__title">Caja Principal</h2>
-      <button class="card__bottonEdit">
+      <button class="card__bottonEdit" @click="editCostBox = !editCostBox">
         <i class="material-icons-outlined"> settings </i>
       </button>
     </div>
