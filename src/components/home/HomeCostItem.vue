@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+  import { inject } from '@vue/runtime-core';
+
+  const editCost = inject('editCost');
+</script>
 
 <template>
-  <div class="cost__item">
+  <div class="cost__item" @click="editCost = !editCost">
     <span class="cost__value">$127.000</span>
     <span class="cost__date">12/12/2021</span>
   </div>
